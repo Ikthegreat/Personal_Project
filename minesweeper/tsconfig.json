@@ -1,0 +1,16 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@common/*": ["./src/common/*"],
+      "@navigator/*": ["./src/navigator/*"],
+      "@recoil/*": ["./src/recoil/*"],
+      "@game/*": ["./src/views/game/*"],
+      "@start/*": ["./src/views/start/*"]
+    },
+    "strict": true,
+    "jsx": "react-native"
+  },
+  "include": ["**/*.ts", "**/*.tsx"]
+}
